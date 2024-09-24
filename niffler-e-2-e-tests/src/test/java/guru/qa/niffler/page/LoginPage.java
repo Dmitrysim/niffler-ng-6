@@ -10,7 +10,6 @@ public class LoginPage {
   private final SelenideElement usernameInput = $("input[name='username']");
   private final SelenideElement passwordInput = $("input[name='password']");
   private final SelenideElement submitButton = $("button[type='submit']");
-  private final SelenideElement header = $("h1.header");
   private final SelenideElement createAccountButton = $("a.form__register");
   private final SelenideElement errorText = $("p.form__error");
 
@@ -21,7 +20,7 @@ public class LoginPage {
     return new MainPage();
   }
 
-  public RegisterPage clickOnCreateAccButton() {
+  public RegisterPage clickOnCreateAccountButton() {
     createAccountButton.click();
     return new RegisterPage();
   }
